@@ -8,6 +8,5 @@ It requires observation, concentration and a good memory to win.
 The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso and Pairs.
 
 
- 
-Object of the Game
+
 The object of the game is to collect the most matching pairs.
