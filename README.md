@@ -1,4 +1,4 @@
-# Money-Memory
+# Kung Fu Panda Memory
 Classic picture memory game
 
 Memory has long been a favorite game for all generations. It is easy to play, in fact it is so simple that really young children can play with ease.
