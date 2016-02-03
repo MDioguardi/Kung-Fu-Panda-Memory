@@ -10,7 +10,7 @@ The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso and 
 # Rules Of The Game
  You must remember where the pictures are and find the pairs.
 
-Each picture is repeated 2 times on a 4x5 grid.The player must click two different cells. If the two squares have the same picture, the player wins one point.
+Each picture is repeated 2 times on a 4x5 grid.The player must click two different cells. 
 When a player finds a pair of pictures, the pictures will be removed from the board.
 When the grid is empty, the player wins
 
