@@ -13,4 +13,5 @@ The object of the game is to collect the most matching pairs.
 
 #Resources
 [jQuery API Documentation](https://api.jquery.com/)
+>
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
