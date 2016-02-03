@@ -52,16 +52,16 @@ function ShuffleImages() {
 
 // When the cards  are matched the set is removed
 function ResetGame() {
-  ShuffleImages();
-  $(Source + " div img").hide();
-  $(Source + " div").css("visibility", "visible");
-  Counter = 0;
-  $("#success").remove();
-  $("#counter").html("" + Counter);
-  BoxOpened = "";
-  ImgOpened = "";
-  ImgFound = 0;
-  return false;
+    ShuffleImages();
+    $(Source + " div img").hide();
+    $(Source + " div").css("visibility", "visible");
+    Counter = 0;
+    $("#success").remove();
+    $("#counter").html("" + Counter);
+    BoxOpened = "";
+    ImgOpened = "";
+    ImgFound = 0;
+    return false;
 }
 //This make all of the cards perform their actions //
 
@@ -125,12 +125,7 @@ $(function() {
 });
 
 
-var song = $("#song")[0];
 
-var playSong = function() {
-  song.play();
-
-}
 
 
 
