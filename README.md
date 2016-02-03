@@ -30,8 +30,8 @@ In order to play, just click the cells. It's simple to play, the rules are simpl
 
 
 #Resources
-[jQuery API Documentation](https://api.jquery.com/)
+>[jQuery API Documentation](https://api.jquery.com/)
 >
-[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+>[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 >
-[Learning jQuery 4th Edition](http://www.pdfiles.com/pdf/files/English/Web_Apps_Programming_&_Internet/Learning_jQuery.pdf)
+>[Learning jQuery 4th Edition](http://www.pdfiles.com/pdf/files/English/Web_Apps_Programming_&_Internet/Learning_jQuery.pdf)
