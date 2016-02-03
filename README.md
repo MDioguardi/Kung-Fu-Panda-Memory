@@ -27,3 +27,5 @@ In order to play, just click the cells. It's simple to play, the rules are simpl
 [jQuery API Documentation](https://api.jquery.com/)
 >
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+>
+[Learning jQuery 4th Edition](http://www.pdfiles.com/pdf/files/English/Web_Apps_Programming_&_Internet/Learning_jQuery.pdf)
