@@ -1,0 +1,52 @@
+
+ body {
+  font: 18px bold comic;
+  color: #262626;
+  background-image: url('http://drwallpaper.com/wp-content/uploads/2016/01/kung_fu_panda_3_wallpaper_hd_background_download_facebook_cover9.jpg')
+}
+ #picbox {
+  margin: 0px auto;
+  width: 640px;
+}
+ #boxcard {
+  z-index: 1;
+  margin: 10px 0 0;
+}
+ #boxcard div{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  padding: 8px;
+  border: 5px solid gold;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: 0 1px 5px ;
+  background: #660000;
+  z-index: 2;
+}
+ #boxcard div img {
+  display: none;
+  border-radius: 0;
+  z-index: 3;
+}
+ #boxbuttons {
+  text-align: center;
+  margin: 30px;
+  display: block;
+}
+
+/*Reset css code */
+
+ #boxbuttons .button {
+  text-transform: uppercase;
+  background: gold;
+  padding: 10px 12px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+ #boxbuttons .button:hover {
+  background: #660000;
+  color:white;
+}

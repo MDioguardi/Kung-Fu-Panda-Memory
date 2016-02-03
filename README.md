@@ -1,2 +1,2 @@
-# Money-Memory
+# Kung Fu Panda Memory
 Classic picture memory game
