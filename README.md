@@ -23,7 +23,7 @@ When the grid is empty, the player wins
 In order to play, just click the cells. It's simple to play, the rules are simple, but the game is far from simple! Try it and you will have fun.
 
 #Technologies
-HTML , CSS , Javascript , jQuery
+HTML , CSS , Javascript , jQuery , Balsamiq , Trello
 
 
 
