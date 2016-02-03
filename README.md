@@ -10,3 +10,5 @@ The game is also known as Concentration, Pelmanism, Shinkei-suijaku, Pexeso and 
 
 
 The object of the game is to collect the most matching pairs.
+
+#Resources
