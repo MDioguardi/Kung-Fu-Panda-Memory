@@ -1,4 +1,5 @@
 
+
  body {
   font: 18px bold comic;
   color: #262626;
@@ -47,6 +48,6 @@
   cursor: pointer;
 }
  #boxbuttons .button:hover {
-  background: #660000;
-  color:white;
+  background: #a8ffdf;
+  color: #000000;
 }

@@ -1,15 +1,12 @@
+var boxOpened = "";
+var imgOpened = "";
+var counter = 0;
+var imgFound = 0;
 
-
-
-var BoxOpened = "";
-var ImgOpened = "";
-var Counter = 0;
-var ImgFound = 0;
-
-var Source = "#boxcard";
+var source = "#boxcard";
 //Pictures in the boxes//
 // Chane to imgur   //
-var ImgSource = [
+var imgSource = [
   "http://a1.mzstatic.com/us/r1000/022/Purple/76/e4/ed/mzl.upwpacxr.100x100-75.jpg",
   "http://www.playgamesarcade.com/games/images/kung-fu-panda-world-tigress-jump_2.jpg",
   "http://www.freeplaynow.com/uploads/kung-fu-panda-world-monkey-run.jpg",
@@ -22,91 +19,91 @@ var ImgSource = [
   "http://www.whats-your-sign.com/images/100xNxChineseSymbol4.jpg.pagespeed.ic.DU3DcnK35R.jpg"
   ]
 
-function RandomFunction(MaxValue, MinValue) {
-    return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
+function randomFunction(maxValue, minValue) {
+    return Math.round(Math.random() * (maxValue - minValue) + minValue);
   }
 
 // This shuffles the images when game is restarted//
 
-function ShuffleImages() {
-  var ImgAll = $(Source).children();
-  var ImgThis = $(Source + " div:first-child");
-  var ImgArr = new Array();
+function shuffleImages() {
+  var imgAll = $(source).children();
+  var imgThis = $(source + " div:first-child");
+  var imgArr = new Array();
 
 // This is the  shows the current images matched.
-  for (var i = 0; i < ImgAll.length; i++) {
-    ImgArr[i] = $("#" + ImgThis.attr("id") + " img").attr("src");
-    ImgThis = ImgThis.next();
+  for (var i = 0; i < imgAll.length; i++) {
+    imgArr[i] = $("#" + imgThis.attr("id") + " img").attr("src");
+    imgThis = imgThis.next();
   }
 
-    ImgThis = $(Source + " div:first-child");
+    imgThis = $(source + " div:first-child");
 
-  for (var z = 0; z < ImgAll.length; z++) {
-  var RandomNumber = RandomFunction(0, ImgArr.length - 1);
+  for (var z = 0; z < imgAll.length; z++) {
+  var randomNumber = randomFunction(0, imgArr.length - 1);
 
-    $("#" + ImgThis.attr("id") + " img").attr("src", ImgArr[RandomNumber]);
-    ImgArr.splice(RandomNumber, 1);
-    ImgThis = ImgThis.next();
+    $("#" + imgThis.attr("id") + " img").attr("src", imgArr[randomNumber]);
+    imgArr.splice(randomNumber, 1);
+    imgThis = imgThis.next();
   }
 }
 
 // When the cards  are matched the set is removed
-function ResetGame() {
-    ShuffleImages();
-    $(Source + " div img").hide();
-    $(Source + " div").css("visibility", "visible");
-    Counter = 0;
+function resetGame() {
+    shuffleImages();
+    $(source + " div img").hide();
+    $(source + " div").css("visibility", "visible");
+    counter = 0;
     $("#success").remove();
-    $("#counter").html("" + Counter);
-    BoxOpened = "";
-    ImgOpened = "";
-    ImgFound = 0;
+    $("#counter").html("" + counter);
+    boxOpened = "";
+    imgOpened = "";
+    imgFound = 0;
     return false;
 }
 //This make all of the cards perform their actions //
 
-function OpenCard() {
+function openCard() {
   var id = $(this).attr("id");
 
   if ($("#" + id + " img").is(":hidden")) {
-    $(Source + " div").unbind("click", OpenCard);
+    $(source + " div").unbind("click", openCard);
 
     $("#" + id + " img").slideDown('fast');
 
-    if (ImgOpened == "") {
-      BoxOpened = id;
-      ImgOpened = $("#" + id + " img").attr("src");
+    if (imgOpened == "") {
+      boxOpened = id;
+      imgOpened = $("#" + id + " img").attr("src");
       setTimeout(function() {
-        $(Source + " div").bind("click", OpenCard)
+        $(source + " div").bind("click", openCard)
       }, 300);
     } else {
-      CurrentOpened = $("#" + id + " img").attr("src");
-      if (ImgOpened != CurrentOpened) {
+      currentOpened = $("#" + id + " img").attr("src");
+      if (imgOpened != currentOpened) {
         setTimeout(function() {
           $("#" + id + " img").slideUp('fast');
-          $("#" + BoxOpened + " img").slideUp('fast');
-          BoxOpened = "";
-          ImgOpened = "";
+          $("#" + boxOpened + " img").slideUp('fast');
+          boxOpened = "";
+          imgOpened = "";
         }, 400);
       } else {
         $("#" + id + " img").parent().css("visibility", "hidden");
-        $("#" + BoxOpened + " img").parent().css("visibility", "hidden");
-        ImgFound++;
-        BoxOpened = "";
-        ImgOpened = "";
+        $("#" + boxOpened + " img").parent().css("visibility", "hidden");
+        imgFound++;
+        boxOpened = "";
+        imgOpened = "";
       }
       setTimeout(function() {
-        $(Source + " div").bind("click", OpenCard)
+        $(source + " div").bind("click", openCard)
       }, 400);
     }
 
     // This counts the number of clicks it takes you to finish the game//
     //  and lets you know via text the results.                        //
-    Counter++;
-    $("#counter").html("" + Counter);
+    counter++;
+    $("#counter").html("" + counter);
 
     //This shows all matched images at the end of game//
-    if (ImgFound == ImgSource.length) {
+    if (imgFound == imgSource.length) {
       $("#counter").prepend('<span id="success">你找的图片</span>');
     }
   }
@@ -114,15 +111,16 @@ function OpenCard() {
 
 $(function() {
   for (var y = 1; y < 3 ; y++) {
-    $.each(ImgSource, function(i, val) {
-      $(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
+    $.each(imgSource, function(i, val) {
+      $(source).append("<div id=card" + y + i + "><img src=" + val + " />");
     });
   }
-  $(Source + " div").click(OpenCard);
-  ShuffleImages();
+  $(source + " div").click(openCard);
+  shuffleImages();
 
 
 });
+
 
 
 
