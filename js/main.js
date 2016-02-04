@@ -5,7 +5,6 @@ var imgFound = 0;
 
 var source = "#boxcard";
 //Pictures in the boxes//
-// Chane to imgur   //
 var imgSource = [
   "http://a1.mzstatic.com/us/r1000/022/Purple/76/e4/ed/mzl.upwpacxr.100x100-75.jpg",
   "http://www.playgamesarcade.com/games/images/kung-fu-panda-world-tigress-jump_2.jpg",
