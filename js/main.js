@@ -4,7 +4,7 @@ var counter = 0;
 var imgFound = 0;
 
 var source = "#boxcard";
-//Pictures in the boxes//
+
 var imgSource = [
   "http://a1.mzstatic.com/us/r1000/022/Purple/76/e4/ed/mzl.upwpacxr.100x100-75.jpg",
   "http://www.playgamesarcade.com/games/images/kung-fu-panda-world-tigress-jump_2.jpg",
@@ -22,14 +22,14 @@ function randomFunction(maxValue, minValue) {
     return Math.round(Math.random() * (maxValue - minValue) + minValue);
   }
 
-// This shuffles the images when game is restarted//
+//  shuffles the images when game is restarted//
 
 function shuffleImages() {
   var imgAll = $(source).children();
   var imgThis = $(source + " div:first-child");
   var imgArr = new Array();
 
-// This is the  shows the current images matched.
+//  shows the current images matched.
   for (var i = 0; i < imgAll.length; i++) {
     imgArr[i] = $("#" + imgThis.attr("id") + " img").attr("src");
     imgThis = imgThis.next();
