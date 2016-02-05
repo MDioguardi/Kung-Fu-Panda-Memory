@@ -34,10 +34,10 @@ HTML , CSS , Javascript , jQuery , Balsamiq , [Trello] (https://trello.com/b/okI
 
 
 #Resources
->[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
->
->[MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
->
->[jQuery API Documentation](https://api.jquery.com/)
->
->[Learning jQuery 4th Edition](http://www.pdfiles.com/pdf/files/English/Web_Apps_Programming_&_Internet/Learning_jQuery.pdf)
+*[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+
+*[MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+*[jQuery API Documentation](https://api.jquery.com/)
+
+*[Learning jQuery 4th Edition](http://www.pdfiles.com/pdf/files/English/Web_Apps_Programming_&_Internet/Learning_jQuery.pdf)
