@@ -26,7 +26,7 @@ In order to play, just click the cells. It's simple to play, the rules are simpl
 
 
 #Technologies
-HTML , CSS , Javascript , jQuery , Balsamiq , Trello
+HTML , CSS , Javascript , jQuery , Balsamiq , [Trello] (https://trello.com/b/okIBPt52/project-1-kung-fu-panda-memory)
 
 
 
