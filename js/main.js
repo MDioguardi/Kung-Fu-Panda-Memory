@@ -61,7 +61,7 @@ function resetGame() {
 }
 //This make all of the cards perform their actions 
 // .hide(hides the matched elements)
-// .bind/.ubind counts and ignores the clicks
+// .bind/.unbind counts and ignores the clicks
 // .silddown brings the picture in cell up
 // .slidup removes the picture in cell back
 
