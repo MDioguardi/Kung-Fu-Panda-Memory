@@ -22,7 +22,7 @@ function randomFunction(maxValue, minValue) {
     return Math.round(Math.random() * (maxValue - minValue) + minValue);
   }
 
-//  shuffles the images when game is restarted//
+//  shuffles the images when game is restarted
 function shuffleImages() {
   var imgAll = $(source).children();
   var imgThis = $(source + " div:first-child");
@@ -46,6 +46,7 @@ for (var i = 0; i < imgAll.length; i++) {
 }
 
 // When the cards  are matched the set is removed
+// .remove (removes the matched cards)
 function resetGame() {
     shuffleImages();
     $(source + " div img").hide();
@@ -58,7 +59,12 @@ function resetGame() {
     imgFound = 0;
     return false;
 }
-//This make all of the cards perform their actions //
+//This make all of the cards perform their actions 
+// .hide(hides the matched elements)
+// .bind/.ubind counts and ignores the clicks
+// .silddown brings the picture in cell up
+// .slidup removes the picture in cell back
+
 function openCard() {
   var id = $(this).attr("id");
 
@@ -94,18 +100,19 @@ function openCard() {
       }, 400);
     }
 
-    // This counts the number of clicks it takes you to finish the game//
-    //  and lets you know via text the results.                        //
+    // This counts the number of clicks it takes you to finish the game
+    //  and lets you know via text the results                        
     counter++;
     $("#counter").html("" + counter);
 
     //This shows all matched images at the end of game//
+    // .prepend displays the content from the counter
     if (imgFound == imgSource.length) {
       $("#counter").prepend('<span id="success">你找的图片</span>');
     }
   }
 }
-
+// .click triggers the click event handler on a element(selecting boxes and restart button)
 $(function() {
   for (var y = 1; y < 3 ; y++) {
     $.each(imgSource, function(i, val) {
