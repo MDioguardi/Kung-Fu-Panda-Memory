@@ -23,14 +23,13 @@ function randomFunction(maxValue, minValue) {
   }
 
 //  shuffles the images when game is restarted//
-
 function shuffleImages() {
   var imgAll = $(source).children();
   var imgThis = $(source + " div:first-child");
   var imgArr = new Array();
 
 //  shows the current images matched.
-  for (var i = 0; i < imgAll.length; i++) {
+for (var i = 0; i < imgAll.length; i++) {
     imgArr[i] = $("#" + imgThis.attr("id") + " img").attr("src");
     imgThis = imgThis.next();
   }
@@ -60,7 +59,6 @@ function resetGame() {
     return false;
 }
 //This make all of the cards perform their actions //
-
 function openCard() {
   var id = $(this).attr("id");
 
